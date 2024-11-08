@@ -22,6 +22,7 @@ function App() {
           <main className="flex-1 overflow-x-hidden overflow-y-auto bg-darker">
             <div className="container mx-auto px-6 py-8">
               <Routes>
+                <Route path="*" element={<Dashboard />} />
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/profile" element={<div>Profile Page</div>} />
                 <Route path="/tasks" element={<div>Tasks Page</div>} />
